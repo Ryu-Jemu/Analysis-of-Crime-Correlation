@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_3c2d75fca46afa26f8e6ef21bf709331 {
+                #map_b8ba2fcf2f03f968f941cfdc01fa76a7 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,21 +35,18 @@
                 .leaflet-container { font-size: 1rem; }
             </style>
         
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_3c2d75fca46afa26f8e6ef21bf709331" ></div>
+            <div class="folium-map" id="map_b8ba2fcf2f03f968f941cfdc01fa76a7" ></div>
         
 </body>
 <script>
     
     
-            var map_3c2d75fca46afa26f8e6ef21bf709331 = L.map(
-                "map_3c2d75fca46afa26f8e6ef21bf709331",
+            var map_b8ba2fcf2f03f968f941cfdc01fa76a7 = L.map(
+                "map_b8ba2fcf2f03f968f941cfdc01fa76a7",
                 {
                     center: [37.5665, 126.978],
                     crs: L.CRS.EPSG3857,
@@ -66,7 +63,7 @@
 
         
     
-            var tile_layer_2be37cf1bd91c04949a75ea7b22b6b34 = L.tileLayer(
+            var tile_layer_e496bb7d7888ae03912d44e70663ddff = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -83,556 +80,352 @@
             );
         
     
-            tile_layer_2be37cf1bd91c04949a75ea7b22b6b34.addTo(map_3c2d75fca46afa26f8e6ef21bf709331);
+            tile_layer_e496bb7d7888ae03912d44e70663ddff.addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var marker_cluster_151381e0497a1ba3587aa465638ade06 = L.markerClusterGroup(
-                {
-}
-            );
-        
-    
-            var marker_7fd62f00bf98c70df90ab7820cf268a9 = L.marker(
+            var circle_marker_71f260694d405e9c775018f52ee4250c = L.circleMarker(
                 [37.5172, 127.0473],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_1e1744c4df8223248d6f726d82df4664 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "green",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_7fd62f00bf98c70df90ab7820cf268a9.setIcon(icon_1e1744c4df8223248d6f726d82df4664);
-        
-    
-        var popup_126068016cbf31461ea7f77209bd775f = L.popup({
+        var popup_97a39f34f1b15df3a699b019d46c5257 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_12de843399d5749d8e1274be07f7f362 = $(`<div id="html_12de843399d5749d8e1274be07f7f362" style="width: 100.0%; height: 100.0%;">강남구 (Cluster 2)</div>`)[0];
-                popup_126068016cbf31461ea7f77209bd775f.setContent(html_12de843399d5749d8e1274be07f7f362);
+                var html_b90ac1841cfa67ac8d0c689d480df4b7 = $(`<div id="html_b90ac1841cfa67ac8d0c689d480df4b7" style="width: 100.0%; height: 100.0%;">강남구 (클러스터 1)<br>총범죄: 9955.0건</div>`)[0];
+                popup_97a39f34f1b15df3a699b019d46c5257.setContent(html_b90ac1841cfa67ac8d0c689d480df4b7);
             
         
 
-        marker_7fd62f00bf98c70df90ab7820cf268a9.bindPopup(popup_126068016cbf31461ea7f77209bd775f)
+        circle_marker_71f260694d405e9c775018f52ee4250c.bindPopup(popup_97a39f34f1b15df3a699b019d46c5257)
         ;
 
         
     
     
-            var marker_fe558371434f6aa5f621f40f69a303d7 = L.marker(
+            var circle_marker_c902207888f5c9309d169641e26f3a90 = L.circleMarker(
                 [37.5301, 127.1238],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_3d86c0011316a8a4ec35ab50e4c8332a = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_fe558371434f6aa5f621f40f69a303d7.setIcon(icon_3d86c0011316a8a4ec35ab50e4c8332a);
-        
-    
-        var popup_740f30d713ed80bb5a01499dbe9358ce = L.popup({
+        var popup_4817d8478ddf07e9d42502e0b86ea7c0 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_81f3d2e5d418936fb06a480a5abbf645 = $(`<div id="html_81f3d2e5d418936fb06a480a5abbf645" style="width: 100.0%; height: 100.0%;">강동구 (Cluster 0)</div>`)[0];
-                popup_740f30d713ed80bb5a01499dbe9358ce.setContent(html_81f3d2e5d418936fb06a480a5abbf645);
+                var html_32b00393d26b7402da156108eed83127 = $(`<div id="html_32b00393d26b7402da156108eed83127" style="width: 100.0%; height: 100.0%;">강동구 (클러스터 0)<br>총범죄: 5227.0건</div>`)[0];
+                popup_4817d8478ddf07e9d42502e0b86ea7c0.setContent(html_32b00393d26b7402da156108eed83127);
             
         
 
-        marker_fe558371434f6aa5f621f40f69a303d7.bindPopup(popup_740f30d713ed80bb5a01499dbe9358ce)
+        circle_marker_c902207888f5c9309d169641e26f3a90.bindPopup(popup_4817d8478ddf07e9d42502e0b86ea7c0)
         ;
 
         
     
     
-            var marker_2f6c8ba86780a28783b62c3836f7052b = L.marker(
-                [37.6396, 127.0256],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+            var circle_marker_b22e67aa4e0922bedd13fae40cd2f891 = L.circleMarker(
+                [37.6398, 127.0255],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_44b4033bf7a78aa8cf085916b4c2c917 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_2f6c8ba86780a28783b62c3836f7052b.setIcon(icon_44b4033bf7a78aa8cf085916b4c2c917);
-        
-    
-        var popup_791c52446316f752c8ef96e46b059659 = L.popup({
+        var popup_dc6f28c1780311c9230a450cbb82f1a4 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a37247e2b4881dbe714d1f170f84fe60 = $(`<div id="html_a37247e2b4881dbe714d1f170f84fe60" style="width: 100.0%; height: 100.0%;">강북구 (Cluster 1)</div>`)[0];
-                popup_791c52446316f752c8ef96e46b059659.setContent(html_a37247e2b4881dbe714d1f170f84fe60);
+                var html_037c48f802a089e09f4494f56c218b64 = $(`<div id="html_037c48f802a089e09f4494f56c218b64" style="width: 100.0%; height: 100.0%;">강북구 (클러스터 2)<br>총범죄: 3563.0건</div>`)[0];
+                popup_dc6f28c1780311c9230a450cbb82f1a4.setContent(html_037c48f802a089e09f4494f56c218b64);
             
         
 
-        marker_2f6c8ba86780a28783b62c3836f7052b.bindPopup(popup_791c52446316f752c8ef96e46b059659)
+        circle_marker_b22e67aa4e0922bedd13fae40cd2f891.bindPopup(popup_dc6f28c1780311c9230a450cbb82f1a4)
         ;
 
         
     
     
-            var marker_03ebf25ee5d320f01330934ca4106d77 = L.marker(
+            var circle_marker_c5b62012cd0837ecaafd62f3b1ced55a = L.circleMarker(
                 [37.5509, 126.8495],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_0e2f90d77444b986f63b4e13050016c0 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_03ebf25ee5d320f01330934ca4106d77.setIcon(icon_0e2f90d77444b986f63b4e13050016c0);
-        
-    
-        var popup_9bc85865dbf6cf771aea5870a69cf2e5 = L.popup({
+        var popup_91f6ec7e69fad6a1e2f6be922eba5cf9 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_ad9fa417157ac0cadee45e8047330b4c = $(`<div id="html_ad9fa417157ac0cadee45e8047330b4c" style="width: 100.0%; height: 100.0%;">강서구 (Cluster 0)</div>`)[0];
-                popup_9bc85865dbf6cf771aea5870a69cf2e5.setContent(html_ad9fa417157ac0cadee45e8047330b4c);
+                var html_c619f485b1bed8fd4c6792ea4341b74c = $(`<div id="html_c619f485b1bed8fd4c6792ea4341b74c" style="width: 100.0%; height: 100.0%;">강서구 (클러스터 1)<br>총범죄: 6397.0건</div>`)[0];
+                popup_91f6ec7e69fad6a1e2f6be922eba5cf9.setContent(html_c619f485b1bed8fd4c6792ea4341b74c);
             
         
 
-        marker_03ebf25ee5d320f01330934ca4106d77.bindPopup(popup_9bc85865dbf6cf771aea5870a69cf2e5)
+        circle_marker_c5b62012cd0837ecaafd62f3b1ced55a.bindPopup(popup_91f6ec7e69fad6a1e2f6be922eba5cf9)
         ;
 
         
     
     
-            var marker_3cdf662899235844aca26aac25ebcc77 = L.marker(
+            var circle_marker_275da38b4ba51e878a043cdec33995c1 = L.circleMarker(
                 [37.4781, 126.9516],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_0567da864ff262edd17546d0258b9fd3 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_3cdf662899235844aca26aac25ebcc77.setIcon(icon_0567da864ff262edd17546d0258b9fd3);
-        
-    
-        var popup_ce467ec04951531c9abeb75e37b4532a = L.popup({
+        var popup_64a48fde561fee196bdab78a13b1c955 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_531fff11b2cc1a896c6980de70ebcd35 = $(`<div id="html_531fff11b2cc1a896c6980de70ebcd35" style="width: 100.0%; height: 100.0%;">관악구 (Cluster 0)</div>`)[0];
-                popup_ce467ec04951531c9abeb75e37b4532a.setContent(html_531fff11b2cc1a896c6980de70ebcd35);
+                var html_637bf16d5ab0d712c3a23263d84e8156 = $(`<div id="html_637bf16d5ab0d712c3a23263d84e8156" style="width: 100.0%; height: 100.0%;">관악구 (클러스터 0)<br>총범죄: 7136.0건</div>`)[0];
+                popup_64a48fde561fee196bdab78a13b1c955.setContent(html_637bf16d5ab0d712c3a23263d84e8156);
             
         
 
-        marker_3cdf662899235844aca26aac25ebcc77.bindPopup(popup_ce467ec04951531c9abeb75e37b4532a)
+        circle_marker_275da38b4ba51e878a043cdec33995c1.bindPopup(popup_64a48fde561fee196bdab78a13b1c955)
         ;
 
         
     
     
-            var marker_9cc1d84a8b5e3e37ebc086334bd3b067 = L.marker(
-                [37.5384, 127.0823],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+            var circle_marker_6cca6b00c781df08c6112049669bc67d = L.circleMarker(
+                [37.5385, 127.0823],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_f00958232f51c1f712e7b2cd05322484 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_9cc1d84a8b5e3e37ebc086334bd3b067.setIcon(icon_f00958232f51c1f712e7b2cd05322484);
-        
-    
-        var popup_29775135898f9f31d0fadab7a661f813 = L.popup({
+        var popup_f530547a55f121acf5bb02f7ad04de27 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_36442ad328f9f0189471a28415015598 = $(`<div id="html_36442ad328f9f0189471a28415015598" style="width: 100.0%; height: 100.0%;">광진구 (Cluster 0)</div>`)[0];
-                popup_29775135898f9f31d0fadab7a661f813.setContent(html_36442ad328f9f0189471a28415015598);
+                var html_8f5bc7d2d233efe2369bf20dd652f4d4 = $(`<div id="html_8f5bc7d2d233efe2369bf20dd652f4d4" style="width: 100.0%; height: 100.0%;">광진구 (클러스터 0)<br>총범죄: 5285.0건</div>`)[0];
+                popup_f530547a55f121acf5bb02f7ad04de27.setContent(html_8f5bc7d2d233efe2369bf20dd652f4d4);
             
         
 
-        marker_9cc1d84a8b5e3e37ebc086334bd3b067.bindPopup(popup_29775135898f9f31d0fadab7a661f813)
+        circle_marker_6cca6b00c781df08c6112049669bc67d.bindPopup(popup_f530547a55f121acf5bb02f7ad04de27)
         ;
 
         
     
     
-            var marker_7ce09403b09c259f7601186a5a4f0337 = L.marker(
+            var circle_marker_cab244290df24d8c80f48427c308bb56 = L.circleMarker(
                 [37.4955, 126.8877],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_7c3b5c2f20a8937392ad347b77bfe6ad = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_7ce09403b09c259f7601186a5a4f0337.setIcon(icon_7c3b5c2f20a8937392ad347b77bfe6ad);
-        
-    
-        var popup_b59bf21aa875d350a1ab1d5ab28f68fe = L.popup({
+        var popup_c052095889fb66c25f25c6143835b995 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_4f12d7c97b75854650db174979eb2613 = $(`<div id="html_4f12d7c97b75854650db174979eb2613" style="width: 100.0%; height: 100.0%;">구로구 (Cluster 0)</div>`)[0];
-                popup_b59bf21aa875d350a1ab1d5ab28f68fe.setContent(html_4f12d7c97b75854650db174979eb2613);
+                var html_5d6015a8062a6079941e56d4427f64be = $(`<div id="html_5d6015a8062a6079941e56d4427f64be" style="width: 100.0%; height: 100.0%;">구로구 (클러스터 0)<br>총범죄: 5574.0건</div>`)[0];
+                popup_c052095889fb66c25f25c6143835b995.setContent(html_5d6015a8062a6079941e56d4427f64be);
             
         
 
-        marker_7ce09403b09c259f7601186a5a4f0337.bindPopup(popup_b59bf21aa875d350a1ab1d5ab28f68fe)
+        circle_marker_cab244290df24d8c80f48427c308bb56.bindPopup(popup_c052095889fb66c25f25c6143835b995)
         ;
 
         
     
     
-            var marker_c5ab0e2565722d85cc6caf9e04c856dd = L.marker(
-                [37.5124, 126.9392],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+            var circle_marker_5c61070676c2180a3f54a2456da7f764 = L.circleMarker(
+                [37.5124, 126.9396],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_b2209242f0f493350434f36b9f5117e8 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_c5ab0e2565722d85cc6caf9e04c856dd.setIcon(icon_b2209242f0f493350434f36b9f5117e8);
-        
-    
-        var popup_e6dea1852f5314d42aaf36bf94367c8e = L.popup({
+        var popup_6ff157f68f8c088a0eddb7f32b12bce0 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_824cca94e6fa2313e278e463a654545a = $(`<div id="html_824cca94e6fa2313e278e463a654545a" style="width: 100.0%; height: 100.0%;">동작구 (Cluster 0)</div>`)[0];
-                popup_e6dea1852f5314d42aaf36bf94367c8e.setContent(html_824cca94e6fa2313e278e463a654545a);
+                var html_de50b08440685b4e260cb61bf853c256 = $(`<div id="html_de50b08440685b4e260cb61bf853c256" style="width: 100.0%; height: 100.0%;">동작구 (클러스터 0)<br>총범죄: 4022.0건</div>`)[0];
+                popup_6ff157f68f8c088a0eddb7f32b12bce0.setContent(html_de50b08440685b4e260cb61bf853c256);
             
         
 
-        marker_c5ab0e2565722d85cc6caf9e04c856dd.bindPopup(popup_e6dea1852f5314d42aaf36bf94367c8e)
+        circle_marker_5c61070676c2180a3f54a2456da7f764.bindPopup(popup_6ff157f68f8c088a0eddb7f32b12bce0)
         ;
 
         
     
     
-            var marker_38b9e5c490dd6e607b6186875cc4080b = L.marker(
-                [37.5636, 126.9084],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+            var circle_marker_4e3ad2ece0af31ac4f219614a4861947 = L.circleMarker(
+                [37.5663, 126.9014],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_77d6b195ee48532f157102fc87ede0d6 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_38b9e5c490dd6e607b6186875cc4080b.setIcon(icon_77d6b195ee48532f157102fc87ede0d6);
-        
-    
-        var popup_bfd59b5d9442423f646b9a43d52a0a8e = L.popup({
+        var popup_5ad5b24b2e6452afcbd5f4a19753cfa2 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_a927f51da136a8c7b3b664569e18f72d = $(`<div id="html_a927f51da136a8c7b3b664569e18f72d" style="width: 100.0%; height: 100.0%;">마포구 (Cluster 1)</div>`)[0];
-                popup_bfd59b5d9442423f646b9a43d52a0a8e.setContent(html_a927f51da136a8c7b3b664569e18f72d);
+                var html_952ff59ac61589e58c752e72906771e9 = $(`<div id="html_952ff59ac61589e58c752e72906771e9" style="width: 100.0%; height: 100.0%;">마포구 (클러스터 0)<br>총범죄: 5760.0건</div>`)[0];
+                popup_5ad5b24b2e6452afcbd5f4a19753cfa2.setContent(html_952ff59ac61589e58c752e72906771e9);
             
         
 
-        marker_38b9e5c490dd6e607b6186875cc4080b.bindPopup(popup_bfd59b5d9442423f646b9a43d52a0a8e)
+        circle_marker_4e3ad2ece0af31ac4f219614a4861947.bindPopup(popup_5ad5b24b2e6452afcbd5f4a19753cfa2)
         ;
 
         
     
     
-            var marker_bd0c182eaf50e9516cb4da61eba1fbd1 = L.marker(
-                [37.5145, 127.1065],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+            var circle_marker_3fbd7a036679e9a9d03a56b0bf566f38 = L.circleMarker(
+                [37.5145, 127.1059],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_cd780d85da0807dc96e489e7064ccd24 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_bd0c182eaf50e9516cb4da61eba1fbd1.setIcon(icon_cd780d85da0807dc96e489e7064ccd24);
-        
-    
-        var popup_35d9a3ce1e1ad3b3e3c91ef30485060b = L.popup({
+        var popup_ac09e16908c7221ec4a572572bef70d3 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_79b777e3db6bc07f890b58f5e20b0450 = $(`<div id="html_79b777e3db6bc07f890b58f5e20b0450" style="width: 100.0%; height: 100.0%;">송파구 (Cluster 0)</div>`)[0];
-                popup_35d9a3ce1e1ad3b3e3c91ef30485060b.setContent(html_79b777e3db6bc07f890b58f5e20b0450);
+                var html_49214d03be9efa157ded351d5f7da69a = $(`<div id="html_49214d03be9efa157ded351d5f7da69a" style="width: 100.0%; height: 100.0%;">송파구 (클러스터 1)<br>총범죄: 7963.0건</div>`)[0];
+                popup_ac09e16908c7221ec4a572572bef70d3.setContent(html_49214d03be9efa157ded351d5f7da69a);
             
         
 
-        marker_bd0c182eaf50e9516cb4da61eba1fbd1.bindPopup(popup_35d9a3ce1e1ad3b3e3c91ef30485060b)
+        circle_marker_3fbd7a036679e9a9d03a56b0bf566f38.bindPopup(popup_ac09e16908c7221ec4a572572bef70d3)
         ;
 
         
     
     
-            var marker_e14d5639e0460c30dfd39308d151b306 = L.marker(
-                [37.5264, 126.8962],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+            var circle_marker_71e606155209b8bed467f1688c2be934 = L.circleMarker(
+                [37.5264, 126.8963],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_ec8818d14942daf600ac5626318dc41c = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_e14d5639e0460c30dfd39308d151b306.setIcon(icon_ec8818d14942daf600ac5626318dc41c);
-        
-    
-        var popup_12eae102ca2bf5d96160469c44828f03 = L.popup({
+        var popup_8095d625c052177462a331335c0cff59 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_77729533e107134b8af41c94a9e37c7c = $(`<div id="html_77729533e107134b8af41c94a9e37c7c" style="width: 100.0%; height: 100.0%;">영등포구 (Cluster 0)</div>`)[0];
-                popup_12eae102ca2bf5d96160469c44828f03.setContent(html_77729533e107134b8af41c94a9e37c7c);
+                var html_d9f75a8b1d5f368a482f9c6a6c9e13c5 = $(`<div id="html_d9f75a8b1d5f368a482f9c6a6c9e13c5" style="width: 100.0%; height: 100.0%;">영등포구 (클러스터 0)<br>총범죄: 6604.0건</div>`)[0];
+                popup_8095d625c052177462a331335c0cff59.setContent(html_d9f75a8b1d5f368a482f9c6a6c9e13c5);
             
         
 
-        marker_e14d5639e0460c30dfd39308d151b306.bindPopup(popup_12eae102ca2bf5d96160469c44828f03)
+        circle_marker_71e606155209b8bed467f1688c2be934.bindPopup(popup_8095d625c052177462a331335c0cff59)
         ;
 
         
     
     
-            var marker_a9c79233e32cd198d0d97adc45a73f7d = L.marker(
-                [37.5324, 126.9901],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+            var circle_marker_2f5922acd75830d361da31d3547573cd = L.circleMarker(
+                [37.5323, 126.9907],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_40e8b44c3e72d1478047fae05db981ad = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_a9c79233e32cd198d0d97adc45a73f7d.setIcon(icon_40e8b44c3e72d1478047fae05db981ad);
-        
-    
-        var popup_40b66cb7a68a641f2ec100fb4af781e7 = L.popup({
+        var popup_2c8a0e6bbec51896b36651cd3e911dbd = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_3df4e318882a0d2f34df3fb1d4bae8c6 = $(`<div id="html_3df4e318882a0d2f34df3fb1d4bae8c6" style="width: 100.0%; height: 100.0%;">용산구 (Cluster 1)</div>`)[0];
-                popup_40b66cb7a68a641f2ec100fb4af781e7.setContent(html_3df4e318882a0d2f34df3fb1d4bae8c6);
+                var html_ea19d37f48c46050fa552c61d2cad442 = $(`<div id="html_ea19d37f48c46050fa552c61d2cad442" style="width: 100.0%; height: 100.0%;">용산구 (클러스터 2)<br>총범죄: 4250.0건</div>`)[0];
+                popup_2c8a0e6bbec51896b36651cd3e911dbd.setContent(html_ea19d37f48c46050fa552c61d2cad442);
             
         
 
-        marker_a9c79233e32cd198d0d97adc45a73f7d.bindPopup(popup_40b66cb7a68a641f2ec100fb4af781e7)
+        circle_marker_2f5922acd75830d361da31d3547573cd.bindPopup(popup_2c8a0e6bbec51896b36651cd3e911dbd)
         ;
 
         
     
     
-            var marker_43d7e11b49f6aa77373f13cb309d3f96 = L.marker(
-                [37.573, 126.9794],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+            var circle_marker_d68b82153d8bba8d82a81ab999e0fddc = L.circleMarker(
+                [37.5729, 126.9793],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_5854d87b3580dd01ed6ac781ade828e4 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_43d7e11b49f6aa77373f13cb309d3f96.setIcon(icon_5854d87b3580dd01ed6ac781ade828e4);
-        
-    
-        var popup_4b0bc6de7b3ee46458be7843d154d963 = L.popup({
+        var popup_24491fac77828d6a3c37b29657436a4e = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_d1a0fcfe05e5a5373fac3e7c1fb898fc = $(`<div id="html_d1a0fcfe05e5a5373fac3e7c1fb898fc" style="width: 100.0%; height: 100.0%;">종로구 (Cluster 1)</div>`)[0];
-                popup_4b0bc6de7b3ee46458be7843d154d963.setContent(html_d1a0fcfe05e5a5373fac3e7c1fb898fc);
+                var html_d04de0099bea4d8c4f8ff35f7ead3215 = $(`<div id="html_d04de0099bea4d8c4f8ff35f7ead3215" style="width: 100.0%; height: 100.0%;">종로구 (클러스터 2)<br>총범죄: 4399.0건</div>`)[0];
+                popup_24491fac77828d6a3c37b29657436a4e.setContent(html_d04de0099bea4d8c4f8ff35f7ead3215);
             
         
 
-        marker_43d7e11b49f6aa77373f13cb309d3f96.bindPopup(popup_4b0bc6de7b3ee46458be7843d154d963)
+        circle_marker_d68b82153d8bba8d82a81ab999e0fddc.bindPopup(popup_24491fac77828d6a3c37b29657436a4e)
         ;
 
         
     
     
-            var marker_76ce5304167c6545bbceb7dc6701e96c = L.marker(
-                [37.5639, 126.9975],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+            var circle_marker_e1361328c60bbccaa2249691c9284a0d = L.circleMarker(
+                [37.5634, 126.9976],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_1b89f6852ddca6cfdea0ff67721f62e4 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "blue",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_76ce5304167c6545bbceb7dc6701e96c.setIcon(icon_1b89f6852ddca6cfdea0ff67721f62e4);
-        
-    
-        var popup_d8acae154d0d96fbc238338757be1d0f = L.popup({
+        var popup_a169558ff92fa0eafc37e0eb534d506e = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_eda9e8b8b64050ec7c9fc3a4c5484b8f = $(`<div id="html_eda9e8b8b64050ec7c9fc3a4c5484b8f" style="width: 100.0%; height: 100.0%;">중구 (Cluster 1)</div>`)[0];
-                popup_d8acae154d0d96fbc238338757be1d0f.setContent(html_eda9e8b8b64050ec7c9fc3a4c5484b8f);
+                var html_2d2e600f97669789f2c6e26ec8480fbe = $(`<div id="html_2d2e600f97669789f2c6e26ec8480fbe" style="width: 100.0%; height: 100.0%;">중구 (클러스터 2)<br>총범죄: 5089.0건</div>`)[0];
+                popup_a169558ff92fa0eafc37e0eb534d506e.setContent(html_2d2e600f97669789f2c6e26ec8480fbe);
             
         
 
-        marker_76ce5304167c6545bbceb7dc6701e96c.bindPopup(popup_d8acae154d0d96fbc238338757be1d0f)
+        circle_marker_e1361328c60bbccaa2249691c9284a0d.bindPopup(popup_a169558ff92fa0eafc37e0eb534d506e)
         ;
 
         
     
     
-            var marker_62b9e012443b855024cd1357cdce4fee = L.marker(
-                [37.6063, 127.0928],
-                {
-}
-            ).addTo(marker_cluster_151381e0497a1ba3587aa465638ade06);
+            var circle_marker_ac0e8d88c994844edebf2efdbe6713a8 = L.circleMarker(
+                [37.6063, 127.0927],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_b8ba2fcf2f03f968f941cfdc01fa76a7);
         
     
-            var icon_f92b82f5bd8100aae8ef6589efd51f73 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-            marker_62b9e012443b855024cd1357cdce4fee.setIcon(icon_f92b82f5bd8100aae8ef6589efd51f73);
-        
-    
-        var popup_def5df02d20551e9d2c82b79c318040e = L.popup({
+        var popup_595d3a298dee9043bd6acab0cd0b7a3a = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_08fcad8c2013c2d9439b4002d6fe1ebd = $(`<div id="html_08fcad8c2013c2d9439b4002d6fe1ebd" style="width: 100.0%; height: 100.0%;">중랑구 (Cluster 0)</div>`)[0];
-                popup_def5df02d20551e9d2c82b79c318040e.setContent(html_08fcad8c2013c2d9439b4002d6fe1ebd);
+                var html_83c93e23e16ce69f6eee91eb0b29a59c = $(`<div id="html_83c93e23e16ce69f6eee91eb0b29a59c" style="width: 100.0%; height: 100.0%;">중랑구 (클러스터 0)<br>총범죄: 4903.0건</div>`)[0];
+                popup_595d3a298dee9043bd6acab0cd0b7a3a.setContent(html_83c93e23e16ce69f6eee91eb0b29a59c);
             
         
 
-        marker_62b9e012443b855024cd1357cdce4fee.bindPopup(popup_def5df02d20551e9d2c82b79c318040e)
+        circle_marker_ac0e8d88c994844edebf2efdbe6713a8.bindPopup(popup_595d3a298dee9043bd6acab0cd0b7a3a)
         ;
 
         
     
-    
-            marker_cluster_151381e0497a1ba3587aa465638ade06.addTo(map_3c2d75fca46afa26f8e6ef21bf709331);
-        
 </script>
 </html>
