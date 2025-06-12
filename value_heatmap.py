@@ -24,6 +24,6 @@ corr_matrix = df_selected.corr()
 # 히트맵 시각화
 plt.figure(figsize=(10, 8))
 sns.heatmap(corr_matrix, annot=True, fmt=".2f", cmap='coolwarm', square=True)
-plt.title('자치구 주요 변수 간 상관관계 히트맵')
+plt.title('주요 변수 간 상관관계 히트맵')
 plt.tight_layout()
 plt.show()
